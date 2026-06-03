@@ -1,0 +1,17 @@
+{
+  "name": "ASP.NET Core Razor + Docker",
+  "image": "mcr.microsoft.com/devcontainers/dotnet:10",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "postCreateCommand": "dotnet restore",
+  "forwardPorts": [8080],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csharp",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
+}
